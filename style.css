@@ -1,0 +1,696 @@
+/* ==========================================================
+                    GOOGLE FONTS
+========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500&display=swap');
+
+
+/* ==========================================================
+                    CSS RESET
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* ==========================================================
+                    ROOT VARIABLES
+========================================================== */
+
+:root{
+
+    --background:#F2F0EA;
+    --primary:#A5856F;
+    --secondary:#A0D4E0;
+    --white:#FFFFFF;
+    --text:#222222;
+    --border:#D8D8D8;
+
+}
+
+
+/* ==========================================================
+                    GLOBAL
+========================================================== */
+
+body{
+
+    font-family:'Roboto',sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+}
+
+
+/* ==========================================================
+                    HEADINGS
+========================================================== */
+
+h1,h2,h3{
+
+    font-family:'Montserrat',sans-serif;
+
+    margin-bottom:15px;
+
+}
+
+
+/* ==========================================================
+                    PAGE SYSTEM
+========================================================== */
+
+.page{
+
+    display:none;
+
+    min-height:100vh;
+
+    width:100%;
+
+    padding:30px;
+
+}
+
+
+/* Home page visible first */
+
+#home-page{
+
+    display:flex;
+
+}
+
+
+/* ==========================================================
+                    PAGE LAYOUT
+========================================================== */
+
+.page{
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+/* ==========================================================
+                    HEADER
+========================================================== */
+
+header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+
+/* ==========================================================
+                    MAIN
+========================================================== */
+
+main{
+
+    width:100%;
+
+    max-width:800px;
+
+}
+
+
+/* ==========================================================
+                    FOOTER
+========================================================== */
+
+footer{
+
+    text-align:center;
+
+    margin-top:40px;
+
+    font-size:14px;
+
+}
+
+
+/* ==========================================================
+                    BUTTONS
+========================================================== */
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:20px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+button:hover{
+
+    background:#8B6F5C;
+
+}
+
+
+/* ==========================================================
+                    INPUTS
+========================================================== */
+
+input,
+textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:8px;
+    margin-bottom:18px;
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    font-family:Roboto,sans-serif;
+
+}
+
+
+textarea{
+
+    resize:none;
+
+}
+
+
+/* ==========================================================
+                    LABEL
+========================================================== */
+
+label{
+
+    font-weight:bold;
+
+}
+
+
+/* ==========================================================
+                    INPUT GROUP
+========================================================== */
+
+.input-group{
+
+    margin-bottom:20px;
+
+}
+
+
+/* ==========================================================
+                    SYSTEM MESSAGE
+========================================================== */
+
+#system-message{
+
+    position:fixed;
+
+    top:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:15px 30px;
+
+    border-radius:10px;
+
+    display:none;
+
+    z-index:1000;
+
+}
+
+
+/* ==========================================================
+                    HOME PAGE
+========================================================== */
+
+#home-page h1{
+
+    font-size:42px;
+
+}
+
+
+#home-page p{
+
+    font-size:18px;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+
+/* ==========================================================
+                    PENALTY SETUP
+========================================================== */
+
+#penalty-setup-page{
+
+    background:var(--background);
+
+}
+
+
+/* ==========================================================
+                    MISSION BOARD
+========================================================== */
+
+#mission-board-page{
+
+    background:var(--background);
+
+}
+
+
+.mission-card{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    margin-bottom:25px;
+
+    box-shadow:0px 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+/* ==========================================================
+                    BUTTON CONTAINER
+========================================================== */
+
+.button-container{
+
+    margin-top:30px;
+
+}
+/* ==========================================================
+                    MAIN QUEST PAGE
+========================================================== */
+
+#main-quest-page{
+
+    background:var(--background);
+
+}
+
+
+#current-mission-name{
+
+    text-align:center;
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+}
+
+
+#current-mission-description{
+
+    text-align:center;
+
+    font-size:18px;
+
+    margin-bottom:30px;
+
+    line-height:1.6;
+
+}
+
+
+#mission-timer{
+
+    width:100%;
+
+    padding:25px;
+
+    background:var(--secondary);
+
+    border-radius:15px;
+
+    text-align:center;
+
+    font-size:40px;
+
+    font-weight:bold;
+
+    margin-bottom:30px;
+
+}
+
+
+#reward-display{
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    color:var(--primary);
+
+    margin-bottom:25px;
+
+}
+
+
+
+/* ==========================================================
+                    SKILL STATS PAGE
+========================================================== */
+
+#skill-stats-page{
+
+    background:var(--background);
+
+}
+
+
+#player-information{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+
+#player-level{
+
+    font-size:36px;
+
+}
+
+
+#player-rank{
+
+    color:var(--primary);
+
+}
+
+
+#xp-section{
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+#xp-text{
+
+    text-align:center;
+
+    margin-top:20px;
+
+    font-size:40px;
+
+    font-weight:bold;
+
+    color:var(--primary);
+
+}
+
+#mission-progress{
+
+    margin-top:40px;
+
+}
+
+
+.skill-card{
+
+    background:white;
+
+    padding:18px;
+
+    margin-bottom:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+.skill-progress-bar{
+
+    width:100%;
+
+    height:18px;
+
+    background:#dddddd;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin-top:12px;
+
+}
+
+
+#skill-fill-1,
+#skill-fill-2,
+#skill-fill-3,
+#skill-fill-4{
+
+    width:0%;
+
+    height:100%;
+
+    background:var(--secondary);
+
+    transition:1s;
+
+}
+
+
+
+/* ==========================================================
+                    PENALTY PAGE
+========================================================== */
+
+#penalty-page{
+
+    background:var(--background);
+
+}
+
+
+#penalty-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    margin:30px 0;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+#penalty-title{
+
+    color:#c0392b;
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* ==========================================================
+                    SMALL ANIMATIONS
+========================================================== */
+
+button{
+
+    transform:scale(1);
+
+}
+
+
+button:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+.mission-card:hover{
+
+    transform:translateY(-5px);
+
+    transition:.3s;
+
+}
+
+
+.skill-card:hover{
+
+    transform:translateY(-5px);
+
+    transition:.3s;
+
+}
+
+
+
+/* ==========================================================
+                    TABLET
+========================================================== */
+
+@media(min-width:768px){
+
+.page{
+
+    padding:60px;
+
+}
+
+
+main{
+
+    max-width:900px;
+
+}
+
+
+#home-page h1{
+
+    font-size:60px;
+
+}
+
+
+button{
+
+    width:350px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+    display:block;
+
+}
+
+}
+
+
+
+/* ==========================================================
+                    DESKTOP
+========================================================== */
+
+@media(min-width:1024px){
+
+body{
+
+    font-size:18px;
+
+}
+
+
+main{
+
+    max-width:1000px;
+
+}
+
+
+#mission-board-page main{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+}
+
+
+.button-container{
+
+    grid-column:1/3;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+.mission-card{
+
+    margin-bottom:0;
+
+}
+
+
+#main-quest-page main{
+
+    max-width:700px;
+
+}
+
+
+#skill-stats-page main{
+
+    max-width:850px;
+
+}
+
+}
