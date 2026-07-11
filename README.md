@@ -1,2 +1,2 @@
 # decodelab-projects
-A fullstack web application using HTML, CSS, and JavaScript for the frontend, with Node.js powering the backend
+this is a web application using HTML, CSS, and JavaScript for the frontend.
